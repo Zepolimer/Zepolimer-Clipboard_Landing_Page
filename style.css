@@ -1,0 +1,326 @@
+
+*,
+*::before,
+*::after {
+    margin: border-box;
+}
+
+:root {
+    --strong-cyan: hsl(171, 66%, 44%);
+    --light-blue: hsl(233, 100%, 69%);
+
+    --dark-grayish-blue: hsl(210, 10%, 33%);
+    --grayish-blue: hsl(201, 11%, 66%);
+}
+
+body {
+    font-family: 'Bai Jamjuree', sans-serif;
+    background-image: url(./images/bg-header-mobile.png);
+    background-repeat: no-repeat;
+    background-position: top 0px left 50%;
+}
+
+.main-container {
+    width: 300px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+#img-computer, #img-device {
+    width: 300px;
+}
+.img-computer {
+    margin: 60px 0 50px 0;
+}
+.img-device {
+    margin: 60px 0px 100px 0px;
+}
+
+/* From the top to the bottom */
+.logo {
+    margin: 110px auto 60px auto;
+}
+
+.title {
+    font-size: 30px;
+    font-weight: 600;
+    margin: 0 0 15px 0;
+}
+
+.about {
+    font-size: 15px;
+    line-height: 1.5rem;
+    color: hsl(201, 11%, 66%);
+    margin: 10px 0 45px 0;
+}
+
+.subtitle {
+    font-size: 26px;
+    font-weight: 600;
+    margin: 0 0 20px 0;
+}
+.subtitle2 {
+    margin-top: 175px;
+}
+
+.subsubtitle  {
+    font-size: 22px;
+    font-weight: 600;
+}
+
+.icon {
+    margin-bottom: 35px;
+}
+
+/* BUTTONS position, size, text */
+.btn {
+    width: 300px;
+    height: 50px;
+    border-radius: 25px;
+    border: none;
+    outline: none;
+    font-size: 16px;
+    letter-spacing: 0.05rem;
+}
+.btn:hover {
+    cursor: pointer;
+}
+.btn-ios {
+    color: white;
+    background-color: var(--strong-cyan);
+    box-shadow: 0px 3px hsl(171, 72%, 33%);
+    margin-bottom: 26px;
+}
+.btn-mac {
+    color: white;
+    background-color: var(--light-blue);
+    box-shadow: 0px 3px hsl(233, 46%, 48%);
+    margin-bottom: 156px;
+}
+
+.brand {
+    width: 135px;
+    margin: 120px auto 40px auto;
+}
+
+.brand-logo {
+    width: 135px;
+    margin: 0px 0 60px 0;
+}
+.ibm, .hp, .vg {
+    width: 110px;
+}
+.hp {
+    margin-top: -5px;
+    margin-bottom: 50px;
+}
+.vg {
+    margin-bottom: 120px;
+}
+
+/* BOTTOM CONTAINER */
+.gray-container {
+    display: grid;
+    grid-template-rows: 100px 50px 50px 50px 50px 50px 50px;
+    background-color: hsla(190, 30%, 96%, 0.719);
+    padding-top: 50px;
+}
+
+.min-logo {
+    width: 50px;
+    margin: 0 auto;
+}
+
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
+
+@media (min-width: 900px) {
+    body {
+        background-image: url(./images/bg-header-desktop.png);
+    }
+
+    .main-container {
+        width: 100.07vw;
+    }
+
+    #logo {
+        width: 130px;
+    }
+
+    /* FONTS */
+    .title {
+        font-size: 44.5px;
+    }
+
+    .about {
+        font-size: 18px;
+        line-height: 1.9rem;
+        width: 50.73vw;
+        margin: 0 auto 50px auto;
+    }
+    .about-title {
+        font-size: 20px;
+        line-height: 1.9rem;
+    }
+
+    .btn {
+        width: 220px;
+        height: 55px;
+        border-radius: 30px;
+        font-size: 18px;
+        margin: 0 10px 170px 0;
+    }
+
+    .subtitle {
+        font-size: 35px;
+    }
+
+
+    /* FIRST COMPUTER IMG */
+    #img-computer {
+        width: 52%;
+        position: absolute;
+        left: -2%;
+        bottom: -90vh;
+        top: none;
+    }
+
+    .img-text-container {
+        width: 350px;
+        margin: 150px 0 0 57%;
+    }
+    .sub-img {
+        text-align: left;
+    }
+    .about-img {
+        width: 350px;
+        text-align: left;
+        font-size: 16px;
+        margin-bottom: 50px;
+    }
+
+
+    /* SECOND COMPUTER IMG */
+    .subtitle2{
+        margin-top: 250px;
+    }
+
+    .img-device {
+        margin: 60px auto 100px -15px;
+    }
+    #img-device {
+        width: 62.54vw;
+    }
+
+
+    /* WORKFLOW */
+    .icon-container {
+        width: 100.67vw;
+        height: auto;
+        margin: 80px auto 0 10.42vw;
+        display: grid;
+        grid-template-columns: 26.4vw 26.4vw 24.32vw;
+    }
+
+    .icon1 { 
+        grid-column: 1; 
+        width: 24.32vw;
+    }
+    .icon2 { 
+        grid-column: 2;
+        width: 24.32vw; 
+        margin-top: 5px;
+    }
+    .icon3 { 
+        grid-column: 3;
+        width: 24.32vw;
+        margin-top: 5px;
+    }
+
+    .icon-sub {
+        font-size: 23px;
+    }
+    .icon-about {
+        font-size: 16px;
+        width: 24.32vw;
+    }
+
+
+    /* BRAND LOGOS */
+    .brand {
+        display: flex;
+        width: 100%;
+        margin: 120px auto 40px 6.95vw;
+    }
+    
+    .brand-logo {
+        width: auto;
+        margin: 0px 3.47vw 120px 3.47vw;
+    }
+    .google {
+        width: 11.12vw;
+    }
+    .ibm {
+        width: 9.73vw;
+    }
+    .microsoft {
+       width: 11.12vw;
+       height: 34px;
+       margin-top: 8px;
+    }
+    .hp {
+        width: 9.45vw;
+        height: 56px;
+        margin-top: -5px;
+        margin-bottom: 50px;
+    }
+    .vg {
+        width: 8.61vw;
+        height: 32px;
+        margin-top: 10px;
+    }
+
+    
+    /* FOOTER */
+    .gray-container {
+        text-align: left;
+        font-size: 17px;
+        display: grid;
+        grid-template-rows: 42px 32px;
+        grid-template-columns: 23.62vw 13.20vw 13.20vw 29.11vw 19.80vw;
+        background-color: hsla(190, 30%, 96%, 0.719);
+        padding-top: 40px;
+        padding-bottom: 40px;
+    }
+
+    .logo {
+        grid-column: 1;
+        margin: 110px 0px 60px 0px;
+    }
+    .faq {
+        grid-row: 1;
+        grid-column: 2;
+    }
+    .contact {
+        grid-row: 2;
+        grid-column: 2;
+    }
+    .privacy {
+        grid-row: 1;
+        grid-column: 3;
+    }
+    .kit {
+        grid-row: 2;
+        grid-column: 3;
+    }
+    .guide {
+        grid-row: 1;
+        grid-column: 4;
+    }
+
+    .social-logo {
+        letter-spacing: 1.5rem;
+        margin-top: 25px;
+    }
+
+}
